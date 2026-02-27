@@ -69,7 +69,7 @@ export function Navigation({ currentPage, onNavigate, onSearch, onAuthClick }: N
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-700 to-blue-900">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="max-w-7xl mx-auto px-4">
           <nav className="flex items-center justify-center space-x-1">
             {navItems.map((item) => (
