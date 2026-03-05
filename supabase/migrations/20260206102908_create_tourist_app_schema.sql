@@ -185,7 +185,7 @@ CREATE POLICY "Authenticated users can delete settings"
 
 -- Insert default slider settings
 INSERT INTO admin_settings (key, value)
-VALUES 
+VALUES
   ('slider_auto_play', '{"enabled": true, "interval": 5000}'::jsonb),
   ('slider_show_arrows', '{"enabled": true}'::jsonb)
 ON CONFLICT (key) DO NOTHING;
