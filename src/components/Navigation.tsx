@@ -48,11 +48,11 @@ export function Navigation({ currentPage, onNavigate, onSearch, onAuthClick }: N
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="ค้นหา..."
-                className="w-64 px-4 py-2 pr-10 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-64 px-4 py-2 pr-10 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <button
                 type="submit"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700"
               >
                 <Search className="w-5 h-5" />
               </button>
@@ -60,7 +60,7 @@ export function Navigation({ currentPage, onNavigate, onSearch, onAuthClick }: N
 
             <button
               onClick={onAuthClick}
-              className="text-gray-600 hover:text-gray-800"
+              className="text-gray-700 hover:text-gray-800"
               title={user ? 'โปรไฟล์' : 'เข้าสู่ระบบ'}
             >
               <UserIcon className="w-6 h-6" />
@@ -78,7 +78,7 @@ export function Navigation({ currentPage, onNavigate, onSearch, onAuthClick }: N
                 onClick={() => onNavigate(item.id)}
                 className={`px-6 py-3 text-white font-medium transition-colors ${
                   currentPage === item.id
-                    ? 'bg-blue-800 bg-opacity-50'
+                    ? 'bg-blue-900 bg-opacity-50'
                     : 'hover:bg-blue-800 hover:bg-opacity-30'
                 }`}
               >
